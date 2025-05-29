@@ -58,3 +58,14 @@ npm run dev
 ```
 La app estará disponible en: http://localhost:5173
 
+
+---
+
+## Vistas
+
+1. **Home**
+![Captura de Pantalla 2025-05-29 a la(s) 11 57 52 a  m](https://github.com/user-attachments/assets/112bc852-36fb-4142-8f9e-09660c23f4e5)
+
+
+2. **Detail**
+![Captura de Pantalla 2025-05-29 a la(s) 11 58 06 a  m](https://github.com/user-attachments/assets/96d5156c-22f7-464b-bef5-5f5837a4f96e)
