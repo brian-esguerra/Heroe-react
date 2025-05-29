@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+.outline {
+  background: transparent;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9); 
+  transition: all .3s ease;
+}
+
+.outline:hover{
+  transform: scale(1.12);
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;  
+}
