@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# 🦸‍♂️ Hero Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web construida con **React**, **TypeScript**, **Tailwind CSS**, y **Vite**, que permite explorar y visualizar información de superhéroes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- **[React](https://reactjs.org/)** – Biblioteca para construir interfaces de usuario.
+- **[TypeScript](https://www.typescriptlang.org/)** – Superset de JavaScript con tipado estático.
+- **[Tailwind CSS](https://tailwindcss.com/)** – Framework de utilidad para estilos CSS.
+- **[Vite](https://vitejs.dev/)** – Herramienta de desarrollo frontend rápida.
+- **[React Router](https://reactrouter.com/)** – Manejo de rutas en React.
+- **[Vercel](https://vercel.com/)** – Plataforma de despliegue para frontend.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🧱 Estructura del Proyecto
+
+src/
+
+├── api/ # Módulos para consumo de APIs
+
+├── components/ # Componentes reutilizables
+
+├── pages/ # Vistas principales (Home, Detalle)
+
+├── types/ # Tipos de datos TypeScript
+
+├── App.tsx # Root component
+
+├── main.tsx # Entrada principal
+
+└── index.css # Estilos base
+
+
+---
+
+## 🛠 Instalación y ejecución local
+
+1. **Clona el repositorio**
+
+```bash
+git clone https://github.com/brian-esguerra/Heroe-react.git
+cd Heroe-react
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Instalar las dependencias**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. **Iniciar el servidor**
+
+```bash
+npm run dev
+```
+La app estará disponible en: http://localhost:5173
+
