@@ -1,4 +1,3 @@
-// src/types/hero.ts
 
 export interface Hero {
   id: number;

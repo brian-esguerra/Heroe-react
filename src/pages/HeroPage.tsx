@@ -38,51 +38,51 @@ function HeroPage() {
           {hero == null ? (
             <p className="text-red-500">Héroe no encontrado</p>
           ) : (
-            <div class="items-center flex flex-wrap mt-4">
-  <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-    <img alt="..." class="max-w-full rounded-lg shadow-lg" src={hero.images.lg} />
+            <div className="items-center flex flex-wrap mt-4">
+  <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+    <img alt="..." className="max-w-full rounded-lg shadow-lg" src={hero.images.lg} />
   </div>
-  <div class="w-full md:w-6/12 ml-auto mr-auto px-4 bg-gray-00 bg-opacity-50 rounded">
-    <div class="md:pr-10">
-      <h3 class="text-3xl font-semibold">{hero.biography.fullName}</h3>
-      <p class="mt-4 text-lg leading-relaxed text-gray-200">
+  <div className="w-full md:w-6/12 ml-auto mr-auto px-4 bg-gray-00 bg-opacity-50 rounded">
+    <div className="md:pr-10">
+      <h3 className="text-3xl font-semibold">{hero.biography.fullName}</h3>
+      <p className="mt-4 text-lg leading-relaxed text-gray-200">
         {hero.work.occupation}
       </p>
-      <ul class="list-none mt-6">
-        <li class="py-2">
-          <div class="flex items-center">
+      <ul className="list-none mt-6">
+        <li className="py-2">
+          <div className="flex items-center">
             <div>
-              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fas fa-fingerprint"></i></span>
+              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i className="fas fa-fingerprint"></i></span>
             </div>
             <div>
-              <h4 class="text-blueGray-500">
+              <h4 className="text-blueGray-500">
                 {hero.appearance.gender}
               </h4>
             </div>
           </div>
         </li>
-        <li class="py-2">
-          <div class="flex items-center">
+        <li className="py-2">
+          <div className="flex items-center">
             <div>
-              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fab fa-html5"></i></span>
+              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i className="fab fa-html5"></i></span>
             </div>
             <div>
-              <h4 class="text-blueGray-500">{hero.appearance.race}</h4>
+              <h4 className="text-blueGray-500">{hero.appearance.race}</h4>
             </div>
           </div>
         </li>
-        <li class="py-2">
-          <div class="flex items-center">
+        <li className="py-2">
+          <div className="flex items-center">
             <div>
-              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="far fa-paper-plane"></i></span>
+              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i className="far fa-paper-plane"></i></span>
             </div>
             <div>
-              <h4 class="text-blueGray-500">{hero.biography.publisher}</h4>
+              <h4 className="text-blueGray-500">{hero.biography.publisher}</h4>
             </div>
           </div>
         </li>
       </ul>
-      <h3 class="text-2xl mt-4 font-semibold">Powerstats</h3>
+      <h3 className="text-2xl mt-4 font-semibold">Powerstats</h3>
         <Stat label="Combat" value={hero.powerstats.combat} />
         <Stat label="Power" value={hero.powerstats.power} />
         <Stat label="Speed" value={hero.powerstats.speed} />

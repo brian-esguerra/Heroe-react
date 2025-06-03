@@ -12,7 +12,7 @@ const BASE_URL = 'https://ea1w717ym2.execute-api.us-east-1.amazonaws.com/api';
 export async function fetchHeroes(page: number, size: number): Promise<Hero[]> {
   const response = await fetch(`${BASE_URL}/heroes?page=${page}&size=${size}`);
   const data = await response.json();
-  return data.items; // <- Asegúrate de que el backend devuelve "items"
+  return data.items;
 }
 
 export const fetchHeroById = async (id: string): Promise<Hero> => {

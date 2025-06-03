@@ -1,4 +1,3 @@
-// src/components/Breadcrumb.tsx
 import { Link } from 'react-router-dom';
 
 type BreadcrumbProps = {

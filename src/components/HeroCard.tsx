@@ -5,7 +5,7 @@ interface HeroCardProps {
   image: string;
   logo: string;
   title: string;
-  race: string;
+  race: string | null;
   background?: 'primary' | 'secondary';
 }
 
