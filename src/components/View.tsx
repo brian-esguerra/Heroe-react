@@ -11,7 +11,7 @@ export default function View({ title, children, breadcrumb }: ViewProps) {
     <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 text-white overflow-hidden min-h-screen">
       <div className="absolute inset-0">
         <img
-          src="/src/assets/wallpaper.jpg"
+          src="/wallpaper.jpg"
           alt="Background"
           className="object-cover object-center w-full h-full"
         />

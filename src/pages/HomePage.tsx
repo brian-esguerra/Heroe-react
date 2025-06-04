@@ -47,7 +47,7 @@ function HomePage() {
                 key={hero.id}
                 id={hero.id}
                 image={hero.images.lg}
-                logo="../src/assets/icon-heroe.png"
+                logo="/icon-heroe.png"
                 title={hero.name}
                 race={hero.appearance.race}
                 background="primary"
