@@ -2,6 +2,11 @@
 
 Una aplicación web construida con **React**, **TypeScript**, **Tailwind CSS**, y **Vite**, que permite explorar y visualizar información de superhéroes.
 
+## Preview
+
+Deploy en Vercel:
+**[Ver Online] (https://heroe-react.vercel.app/?page=1)
+
 ---
 
 ## 🚀 Tecnologías Utilizadas
